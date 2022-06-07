@@ -1,10 +1,12 @@
 html {
-    --accent: #36b3eb;
-    --accent-light: #62c1ec;
-    --accent-shadow: #02C2FF;
+    --accent: #eb3636;
+    --accent-light: #ec6262;
+    --accent-shadow: #ff0202;
     --bg: #0f0f0f;
     --bg-light: #2a2a2a;
     --bg-invert: #c7c7c7;
+    --text: #ffffff;
+    --text-shadow: #3f3f3f;
 
     height: 100%;
     overflow: auto;
@@ -14,10 +16,44 @@ html {
 body {
     height: 100%;
     background-color: var(--bg);
-    color: white;
+    color: var(--text);
     font-family: Verdana, Tahoma, sans-serif;
     text-align: center;
-    font-size: 15px;
+    font-size: 17.5px;
     margin: 0;
     padding: 0;
+}
+
+.fadein {
+    opacity: 0;
+    transform: translateY(5vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+}
+
+.fadein.visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 10px;
+}
+
+h2 {
+    margin: 10px;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: var(--bg-light);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    z-index: 5;
 }
