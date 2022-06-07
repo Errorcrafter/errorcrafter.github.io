@@ -49,11 +49,42 @@ h2 {
 
 #navbar {
     overflow: hidden;
-    background-color: var(--bg-light);
+    background-color: var(--text-shadow);
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 10px;
     margin-bottom: 15px;
     z-index: 5;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--text);
+}
+
+#navbar a:hover {
+    color: var(--accent-light);
+    background-color: var(--bg-invert);
+}
+
+.container {
+    padding: 15px;
+    margin: auto;
+    background-color: var(--bg-light);
+    border-radius: 10px;
+}
+
+.container.large {
+    width: 75%;
+}
+
+.container.mid {
+    width: 50%;
+}
+
+.container.small {
+    width: 25%;
 }
