@@ -1,0 +1,23 @@
+html {
+    --accent: #36b3eb;
+    --accent-light: #62c1ec;
+    --accent-shadow: #02C2FF;
+    --bg: #0f0f0f;
+    --bg-light: #2a2a2a;
+    --bg-invert: #c7c7c7;
+
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+body {
+    height: 100%;
+    background-color: var(--bg);
+    color: white;
+    font-family: Verdana, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
