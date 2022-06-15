@@ -1,6 +1,6 @@
 //import config from "./particlesjs-config.json"
 
-particlesJS.load("particles-js",{
+particlesJS("particles-js",{
     "particles": {
       "number": {
         "value": 20,
@@ -10,7 +10,7 @@ particlesJS.load("particles-js",{
         }
       },
       "color": {
-        "value": "#ec6262"
+        "value": "#eb3636"
       },
       "shape": {
         "type": "circle",
@@ -43,15 +43,15 @@ particlesJS.load("particles-js",{
         "anim": {
           "enable": false,
           "speed": 40,
-          "size_min": 0.1,
+          "size_min": 0.3,
           "sync": false
         }
       },
       "line_linked": {
         "enable": true,
         "distance": 100,
-        "color": "#ffffff",
-        "opacity": 0.4,
+        "color": "#ec6262",
+        "opacity": 0.75,
         "width": 1
       },
       "move": {
@@ -78,7 +78,7 @@ particlesJS.load("particles-js",{
         },
         "onclick": {
           "enable": true,
-          "mode": "push"
+          "mode": "bubble"
         },
         "resize": true
       },
@@ -91,7 +91,7 @@ particlesJS.load("particles-js",{
         },
         "bubble": {
           "distance": 400,
-          "size": 40,
+          "size": 5,
           "duration": 2,
           "opacity": 8,
           "speed": 3
@@ -109,6 +109,4 @@ particlesJS.load("particles-js",{
       }
     },
     "retina_detect": true
-  },function() {
-    console.log('callback - particles.js config loaded');
-});
+  });
